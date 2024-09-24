@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="skola_mobilni_aplikace.Views.zamestnanci"
+             Title="zamestnanci">
+    <VerticalStackLayout>
+        <Label 
+            Text="zamestnanci"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button Text="ucitele"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnUcitele" />
+            <Button Text="udrzbari"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnUdrzbari" />
+            <Button Text="podpora"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnPodpora" />
+            <Button Text="studenti"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="OnStudenti" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
