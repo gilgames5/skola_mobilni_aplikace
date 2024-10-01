@@ -4,9 +4,16 @@
              x:Class="skola_mobilni_aplikace.Views.Skola"
              Title="Skola">
     <VerticalStackLayout>
-        <Label 
-            Text="Skola Page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Vsichni"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+
+        <ListView x:Name="VsichniListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </VerticalStackLayout>
 </ContentPage>

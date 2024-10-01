@@ -1,9 +1,24 @@
-namespace skola_mobilni_aplikace.Views;
+using Microsoft.Maui.Controls;
 
-public partial class podpora : ContentPage
+namespace skola_mobilni_aplikace.Views
 {
-	public podpora()
-	{
-		InitializeComponent();
-	}
+    public partial class podpora : ContentPage
+    {
+        public podpora()
+        {
+            InitializeComponent();
+            PodporaListView.ItemsSource = Models.PodporaData.Podpora; // Bind to the static list
+        }
+
+        private async void OnAddButtonClicked(object sender, EventArgs e)
+        {
+            // Prompt for student name
+            string Name = await DisplayPromptAsync("New Podpora", "Enter the name of the Podpora:");
+
+            if (!string.IsNullOrWhiteSpace(Name))
+            {
+                Models.PodporaData.Podpora.Add(Name); // Add to the static list
+            }
+        }
+    }
 }

@@ -6,33 +6,45 @@
     <VerticalStackLayout>
         <Label 
             Text="zamestnanci"
-            VerticalOptions="Center" 
+            VerticalOptions="Center"
             HorizontalOptions="Center" />
+
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
+
             <Button Text="ucitele"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Clicked="OnUcitele" />
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnUcitele" />
             <Button Text="udrzbari"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Clicked="OnUdrzbari" />
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnUdrzbari" />
             <Button Text="podpora"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Clicked="OnPodpora" />
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnPodpora" />
             <Button Text="studenti"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                Clicked="OnStudenti" />
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="OnStudenti" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

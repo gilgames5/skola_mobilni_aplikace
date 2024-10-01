@@ -7,6 +7,7 @@
     xmlns:views="clr-namespace:skola_mobilni_aplikace.Views"
     Shell.FlyoutBehavior="Disabled">
     
+    
 
     <TabBar>
         <ShellContent
