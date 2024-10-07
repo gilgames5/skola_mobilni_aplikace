@@ -14,7 +14,16 @@
             Title="skola"
             ContentTemplate="{DataTemplate views:Skola}"/>
         <ShellContent
-            Title="zamestnanci"
+            Title="studenti"
+            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+        <ShellContent
+            Title="udrzbari"
+            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+        <ShellContent
+            Title="podpora"
+            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+        <ShellContent
+            Title="ucitele"
             ContentTemplate="{DataTemplate views:zamestnanci}"/>
     </TabBar>
 
