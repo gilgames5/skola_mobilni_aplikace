@@ -15,16 +15,16 @@
             ContentTemplate="{DataTemplate views:Skola}"/>
         <ShellContent
             Title="studenti"
-            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+            ContentTemplate="{DataTemplate views:studenti}"/>
         <ShellContent
             Title="udrzbari"
-            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+            ContentTemplate="{DataTemplate views:udrzbari}"/>
         <ShellContent
             Title="podpora"
-            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+            ContentTemplate="{DataTemplate views:podpora}"/>
         <ShellContent
             Title="ucitele"
-            ContentTemplate="{DataTemplate views:zamestnanci}"/>
+            ContentTemplate="{DataTemplate views:ucitele}"/>
     </TabBar>
 
 </Shell>
